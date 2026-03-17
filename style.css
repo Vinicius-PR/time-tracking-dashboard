@@ -33,3 +33,51 @@
   --spacing-400: 2rem;    /* 32px */
   --spacing-500: 2.5rem;  /* 40px */
 }
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+}
+
+/* CLASSES FOR TYPOGRAPHY */
+.text-preset-1 {
+  font-size: 3.5rem; /* 56px */
+  line-height: 4.125; /* 66px */
+  font-weight: 300;
+}
+
+.text-preset-2 {
+  font-size: 2.5rem; /* 40px */
+  line-height: 2.9375; /* 47px */
+  font-weight: 300;
+}
+
+.text-preset-3 {
+  font-size: 2rem; /* 32px */
+  line-height: 2.375; /* 38px */
+  font-weight: 300;
+}
+
+.text-preset-4 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.75; /* 28px */
+  font-weight: 300;
+}
+
+.text-preset-5-medium {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.3125; /* 21px */
+  font-weight: 500;
+}
+
+.text-preset-5-regular {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.3125; /* 21px */
+  font-weight: 400;
+}
+
+.text-preset-6 {
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.125; /* 18px */
+  font-weight: 400;
+}
