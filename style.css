@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORS VARIABLES */
+  --purple-600: hsl(246, 80%, 60%);
+  --purple-500: hsl(235, 45%, 61%);
+
+  --orange-300-work: hsl(15, 100%, 70%);
+  --blue-300-play: hsl(195, 74%, 62%);
+  --pink-400-study: hsl(348, 100%, 68%);
+  --green-400-exercise: hsl(145, 58%, 55%);
+  --yellow-300-self-cafe: hsl(43, 84%, 65%);
+  --purple-700-social: hsl(264, 64%, 52%);
+
+  --grey-200: hsl(0, 0%, 85%);
+
+  --navy-950: hsl(226, 43%, 10%);
+  --navy-900: hsl(235, 46%, 20%);
+  --navy-800: hsl(235, 41%, 34%);
+  --navy-200: hsl(236, 100%, 87%);
+
+  --white: #FFFFFF;
+  --black: #000000;
+}
