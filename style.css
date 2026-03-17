@@ -25,4 +25,11 @@
 
   --white: #FFFFFF;
   --black: #000000;
+
+  /* SPACING VARIABLES */
+  --spacing-100: 0.5rem;  /* 8px  */
+  --spacing-200: 1rem;    /* 16px */
+  --spacing-300: 1.5rem;  /* 24px */
+  --spacing-400: 2rem;    /* 32px */
+  --spacing-500: 2.5rem;  /* 40px */
 }
