@@ -81,3 +81,50 @@ body {
   line-height: 1.125; /* 18px */
   font-weight: 400;
 }
+
+/* CLASSES FOR COLOR TEXT */
+.text-color-navy-200 {
+  color: var(--navy-200);
+}
+
+.text-color-purple-500 {
+  color: var(--purple-500);
+}
+
+.text-color-white {
+  color: var(--white);
+}
+
+/* MENU USER */
+.menu-user {
+  max-width: 15.9375rem; /* 255px */
+  min-height: 32.5rem; /* 520px */
+  border-radius: 15px;
+  background-color: var(--navy-900);
+}
+
+.menu-header {
+  min-height: 22.125rem; /* 354px */
+  padding: var(--spacing-400) var(--spacing-500) var(--spacing-400) var(--spacing-400);
+  background-color: var(--purple-600);
+  border-radius: 15px;
+}
+
+.avatar {
+  width: 78px;
+  height: 78px;
+  border: 3px solid var(--white);
+  border-radius: 50%;
+  margin-bottom: calc(var(--spacing-500) - 3px); /* The spacing less the border-width */
+}
+
+.menu-options {
+  margin-top: 1.75rem; /* 28px */
+  margin-left: var(--spacing-400);
+}
+
+.menu-options ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3125rem; /* 21px */
+}
