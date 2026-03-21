@@ -149,6 +149,7 @@ body {
 }
 
 .menu-options {
+  width: min-content;
   margin-top: 1.75rem; /* 28px */
   margin-left: var(--spacing-400);
 }
@@ -160,6 +161,10 @@ body {
   gap: 1.3125rem; /* 21px */
 
   color: var(--purple-500);
+}
+
+.menu-options ul li {
+  cursor: pointer;
 }
 
 .menu-options ul li.active {

@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <script defer src="main.js"></script>
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
@@ -27,22 +29,22 @@
 
       <nav class="menu-options">
         <ul>
-          <li class="active">Daily</li>
-          <li>Weekly</li>
-          <li>Monthly</li>
+          <li data-value='daily'>Daily</li>
+          <li class="active" data-value="weekly">Weekly</li>
+          <li data-value="monthly">Monthly</li>
         </ul>
       </nav>
     </section>
 
     <section class="dashboard-data">
 
-      <div class="card work">
+      <!-- <div class="card work">
         <div class="card-header">
           
         </div>
 
         <div class="card-content">
-          <!-- This div card-absolute-effect exists only for design purposes. To create a diferent border effect. -->
+          
           <div class="card-absolute-effect"></div>
 
           <div class="card-name text-preset-5-medium text-color-white">
@@ -52,7 +54,7 @@
           <h2 class="current-time text-preset-1 text-color-white">32hrs</h2>
           <h3 class="previous-time text-preset-6 text-color-navy-200">Last Week - 36hrs</h3>
         </div>
-      </div>
+      </div> -->
 
     </section>
 
