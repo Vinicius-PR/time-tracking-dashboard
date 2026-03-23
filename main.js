@@ -35,12 +35,14 @@ function createCard(data, time) {
           <p>${data.title}</p>
           <img src="./images/icon-ellipsis.svg" alt="">
         </div>
-        <h2 class="current-time text-preset-1 text-color-white">
-          ${currentTimeText}
-        </h2 >
-        <h3 class="previous-time text-preset-6 text-color-navy-200">
-          ${previousText} - ${previousTimeText}
-        </h3>
+        <div class="card-time">
+           <h2 class="current-time text-preset-1 text-color-white">
+            ${currentTimeText}
+          </h2 >
+          <h3 class="previous-time text-preset-6 text-color-navy-200">
+            ${previousText} - ${previousTimeText}
+          </h3>
+        </div>
       </div >
     </div >
   `
