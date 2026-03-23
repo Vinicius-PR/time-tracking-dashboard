@@ -1,5 +1,7 @@
 const dashboardData = document.querySelector('.dashboard-data')
 const menuOptions = document.querySelector('.menu-options ul')
+const buttons = document.querySelectorAll('.menu-options button')
+const loading = document.querySelector('.loading')
 
 // this time can be daily, weekly or monthly
 let time = 'weekly'
@@ -39,6 +41,19 @@ function createCard(data, time) {
   `
 }
 
+function hideLoading() {
+  loading.style.display = 'none'
+}
+
+function showError(errorMessage) {
+  return `
+    <div class="error">
+      <h2>Error. Didn't find the data. Try again later or contact support.</h2>
+      <p>${errorMessage}</p>
+    </div>
+  `
+}
+
 async function loadData(time) {
   try {
     const response = await fetch('/data.json')
@@ -54,24 +69,30 @@ async function loadData(time) {
     })
     dashboardData.innerHTML = dashboardHtml.join('')
   } catch (error) {
-    console.error(error)
+    console.error('Error message:', error)
+    dashboardData.innerHTML = showError(error)
+  } finally {
+    hideLoading()
+    buttons.forEach(btn => btn.disabled = false)
   }
 }
 
 menuOptions.addEventListener('click', (event) => {
-  const li = event.target.closest('li')
-  if (!li) return
+  const button = event.target.closest('button')
+  if (!button) return
+
+  // Disabling the buttons
+  buttons.forEach(btn => btn.disabled = true)
 
   // Removing the active class
-  document.querySelectorAll('.menu-options li')
+  document.querySelectorAll('.menu-options button')
     .forEach(el => el.classList.remove('active'))
 
   // Adding the active class to the click one
-  li.classList.add('active')
+  button.classList.add('active')
 
-  time = li.dataset.value
+  time = button.dataset.value
   loadData(time)
-  console.log(time)
 })
 
 loadData(time)
