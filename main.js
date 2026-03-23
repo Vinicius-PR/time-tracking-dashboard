@@ -16,6 +16,11 @@ function createCard(data, time) {
   }
   const previousText = mapText[time]
 
+  const current = data.timeframes[time].current
+  const previous = data.timeframes[time].previous
+  const currentTimeText = current > 1 ? `${current}hrs` : `${current}hr`
+  const previousTimeText = previous > 1 ? `${previous}hrs` : `${previous}hr`
+
   return `
     <div class="card ${className}">
       <div class="card-header">
@@ -31,10 +36,10 @@ function createCard(data, time) {
           <img src="./images/icon-ellipsis.svg" alt="">
         </div>
         <h2 class="current-time text-preset-1 text-color-white">
-          ${data.timeframes[time].current}hrs
+          ${currentTimeText}
         </h2 >
         <h3 class="previous-time text-preset-6 text-color-navy-200">
-          ${previousText} - ${data.timeframes[time].previous}hrs
+          ${previousText} - ${previousTimeText}
         </h3>
       </div >
     </div >
