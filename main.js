@@ -22,7 +22,7 @@ function createCard(data, time) {
   const previousTimeText = previous > 1 ? `${previous}hrs` : `${previous}hr`
 
   return `
-    <div class="card ${className}">
+    <article class="card ${className}">
       <div class="card-header">
         
       </div>
@@ -44,7 +44,7 @@ function createCard(data, time) {
           </h3>
         </div>
       </div >
-    </div >
+    </article >
   `
 }
 
