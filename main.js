@@ -63,7 +63,7 @@ function showError(errorMessage) {
 
 async function loadData(time) {
   try {
-    const response = await fetch('/data.json')
+    const response = await fetch('/dataa.json')
 
     if (!response.ok) {
       throw new Error('Failed to fecth the data')
@@ -76,8 +76,8 @@ async function loadData(time) {
     })
     dashboardData.innerHTML = dashboardHtml.join('')
   } catch (error) {
-    console.error('Error message:', error)
-    dashboardData.innerHTML = showError(error)
+    console.error('Error:', error)
+    dashboardData.innerHTML = showError(error.message)
   } finally {
     hideLoading()
     buttons.forEach(btn => btn.disabled = false)
