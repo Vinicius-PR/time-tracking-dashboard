@@ -63,7 +63,7 @@ function showError(errorMessage) {
 
 async function loadData(time) {
   try {
-    const response = await fetch('/dataa.json')
+    const response = await fetch('/data.json')
 
     if (!response.ok) {
       throw new Error('Failed to fecth the data')
