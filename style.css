@@ -200,15 +200,12 @@ body {
   flex-direction: column;
   width: 15.9375rem; /* 255px */
   height: 15.25rem; /* 244px */
-  background-color: var(--navy-900);
-  border-radius: 15px;
 }
 
 .card-header {
   height: 4.8125rem; /* 77px */
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-
 }
 
 .card-absolute-effect {
@@ -218,8 +215,10 @@ body {
   right: 0;
   left: 0;
   z-index: -1;
-  border-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
   background-color: var(--navy-900);
+  transition: all 0.2s ease;
 }
 
 .card-content {
@@ -227,6 +226,17 @@ body {
   z-index: 1;
   position: relative;
   padding:0 var(--spacing-400) var(--spacing-400);
+  border-radius: 15px;
+  background-color: var(--navy-900);
+  transition: all 0.2s ease;
+}
+
+.card-content:hover {
+  background-color: var(--navy-800);
+}
+
+.card-content:hover .card-absolute-effect{
+  background-color: var(--navy-800);
 }
 
 .card-name {
